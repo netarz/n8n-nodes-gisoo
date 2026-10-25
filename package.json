@@ -1,0 +1,65 @@
+{
+	"name": "n8n-nodes-gisoo",
+	"version": "0.1.0",
+	"description": "n8n community nodes for Gisoo: a Chat Model for AI Agents, plus chat, image, embedding and model actions.",
+	"license": "MIT",
+	"homepage": "https://github.com/netarz/n8n-nodes-gisoo#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"gisoo",
+		"ai",
+		"llm",
+		"openai-compatible",
+		"chat",
+		"image-generation",
+		"embeddings"
+	],
+	"author": {
+		"name": "Gisoo",
+		"email": "info@gisoo.pro",
+		"url": "https://gisoo.pro"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/netarz/n8n-nodes-gisoo.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"aiNodeSdkVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/GisooApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Gisoo/Gisoo.node.js",
+			"dist/nodes/GisooChatModel/GisooChatModel.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*",
+		"@n8n/ai-node-sdk": "*"
+	},
+	"bugs": {
+		"url": "https://github.com/netarz/n8n-nodes-gisoo/issues"
+	}
+}

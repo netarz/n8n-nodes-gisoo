@@ -1,0 +1,14 @@
+{
+	"node": "n8n-nodes-gisoo.gisooChatModel",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{ "url": "https://github.com/netarz/n8n-nodes-gisoo#credentials" }
+		],
+		"primaryDocumentation": [
+			{ "url": "https://github.com/netarz/n8n-nodes-gisoo#readme" }
+		]
+	}
+}
